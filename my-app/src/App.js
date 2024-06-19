@@ -17,8 +17,12 @@ function App() {
   };
   return (
     <div>
-      <Form tipo1 = "text" tipo2 = "number" tipo3 = "time" tipo4 = "submit"></Form>
-      <Listado></Listado>
+      <h1>Reservas Restaurante</h1>
+      <div>
+        <Form tipo1 = "text" tipo2 = "number" tipo3 = "date" tipo4 = "time" tipo5 = "submit" agregarCita = {agregarCita}></Form>
+      <Listado listaCitas={citas} Eliminar={eliminarCita}></Listado>
+      </div>
+      
     </div>
   );
 }

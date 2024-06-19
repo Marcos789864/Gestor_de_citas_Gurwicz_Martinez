@@ -2,7 +2,7 @@ import React from "react";
 
 function Cita ({Nombre,CantPersonas,Fecha,Horario,Eliminar})
 {
-
+return(
 <div>
     <p>Nombre {Nombre}</p>
     <p>Cantidad de Personas: {CantPersonas}</p>
@@ -11,6 +11,6 @@ function Cita ({Nombre,CantPersonas,Fecha,Horario,Eliminar})
 
 <button onClick={Eliminar}>Eliminar</button>
 </div>
-
+);
 }
 export default Cita
