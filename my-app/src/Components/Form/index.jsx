@@ -30,7 +30,7 @@ function Form({ tipo1, tipo2, tipo3, tipo4, tipo5, agregarCita }) {
                 <Input id="cantPersonas" tipo={tipo2} txt="Cantidad de Personas" value={CantPersonas} onChange={(e) => setCantPersonas(e.target.value)} required />
                 <Input id="fecha" tipo={tipo3} txt="Fecha" value={Fecha} onChange={(e) => setFecha(e.target.value)} required />
                 <Input id="horario" tipo={tipo4} txt="Horario" value={Horario} onChange={(e) => setHorario(e.target.value)} required />
-                <Input tipo="submit" txt={tipo5} />
+                <Input tipo="submit" />
             </form>
         </div>
     );

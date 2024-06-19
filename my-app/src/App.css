@@ -36,3 +36,119 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos generales de la aplicación */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Alinear el texto a la izquierda para los formularios */
+}
+
+.listado-citas {
+  margin-top: 20px;
+}
+
+/* Estilos específicos para los botones */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos específicos para los input */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+  width: calc(100% - 24px); /* Ajustar el ancho con margen interior */
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Estilos para el listado de citas */
+.cita {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cita p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.cita button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cita button:hover {
+  background-color: #c82333;
+}
