@@ -37,7 +37,7 @@
   }
 }
 
-/* Estilos generales de la aplicación */
+/* Estilos generales */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f0f0;
@@ -45,88 +45,39 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Alinear los elementos al inicio verticalmente */
   min-height: 100vh;
 }
 
 .container {
+  display: flex;
+  justify-content: space-around; /* Espacio alrededor para dividir en columnas */
   width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #333;
+  max-width: 1200px; /* Ajusta según tu diseño */
+  margin-top: 20px; /* Espacio superior opcional */
 }
 
 .form-container {
-  background-color: #f8f9fa;
+  width: 45%; /* Ancho del formulario */
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Alinear el texto a la izquierda para los formularios */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Espacio entre form y listado */
 }
 
 .listado-citas {
-  margin-top: 20px;
-}
-
-/* Estilos específicos para los botones */
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
+  width: 45%; /* Ancho del listado de citas */
+  background-color: #ffffff;
+  padding: 20px;
   border-radius: 8px;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos específicos para los input */
-input[type="text"],
-input[type="number"],
-input[type="date"],
-input[type="time"] {
-  width: calc(100% - 24px); /* Ajustar el ancho con margen interior */
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  font-size: 1.1rem;
-}
-
-input[type="submit"] {
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #218838;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el listado de citas */
 .cita {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -152,3 +103,34 @@ input[type="submit"]:hover {
 .cita button:hover {
   background-color: #c82333;
 }
+
+/* Estilos para los inputs del formulario */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+  width: calc(100% - 24px); /* Ajustar el ancho con margen interior */
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+/* Estilos para los botones del formulario */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
