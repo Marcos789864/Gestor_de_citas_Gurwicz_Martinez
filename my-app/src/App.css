@@ -67,36 +67,33 @@ body {
 }
 
 .listado-citas {
-  width: 45%; /* Ancho del listado de citas */
+margin-bottom: 20;
   background-color: #ffffff;
-  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* Estilos para centrar el contenido */
+  display: flex;
+  flex-direction: column; /* Alinear verticalmente los elementos */
+  justify-content: center; /* Centrar verticalmente los elementos */
 }
 
-/* Estilos para el listado de citas */
+
 .cita {
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  ;/* Ejemplo de margen superior en píxeles */
 }
 
 .cita p {
-  margin: 5px 0;
-  font-size: 1.1rem;
+  padding: 0.5rem; /* Ejemplo de padding en rem */
+  font-size: 1rem; /* Ejemplo de tamaño de fuente en rem */
 }
 
 .cita button {
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
+  padding: 0.5rem 1rem; /* Ejemplo de padding con unidades relativas */
+  font-size: 1rem; /* Ejemplo de tamaño de fuente en rem */
   border-radius: 8px;
-  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
@@ -134,3 +131,18 @@ button:hover {
   background-color: #0056b3;
 }
 
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.Form {
+  
+  flex: 0 1 40%; 
+}
+
+.Listado {
+  
+  flex: 0 1 55%; 
+}

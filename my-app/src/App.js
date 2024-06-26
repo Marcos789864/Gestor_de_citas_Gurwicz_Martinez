@@ -16,11 +16,11 @@ function App() {
     setCitas(nuevasCitas);
   };
   return (
-    <div>
+    <div >
       <h1>Reservas Restaurante</h1>
-      <div>
-        <Form tipo1 = "text" tipo2 = "number" tipo3 = "date" tipo4 = "time" tipo5 = "submit" agregarCita = {agregarCita}></Form>
-      <Listado listaCitas={citas} Eliminar={eliminarCita}></Listado>
+      <div className='container'>
+        <Form tipo1 = "text" tipo2 = "number" tipo3 = "date" tipo4 = "time" tipo5 = "submit" agregarCita = {agregarCita} className= 'Form'></Form>
+      <Listado listaCitas={citas} Eliminar={eliminarCita} className= 'Listado'></Listado>
       </div>
       
     </div>

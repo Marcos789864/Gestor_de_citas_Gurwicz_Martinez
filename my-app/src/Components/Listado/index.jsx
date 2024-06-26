@@ -9,7 +9,7 @@ function ListadoCita({ listaCitas, Eliminar }) {
     return (
         <div className="listado-citas">
             {listaCitas.map((cita, index) => (
-                <Cita
+                <Cita 
                     key={index}
                     Nombre={cita.Nombre}
                     CantPersonas={cita.CantPersonas}
