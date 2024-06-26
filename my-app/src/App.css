@@ -43,7 +43,7 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: flex-start; /* Alinear los elementos al inicio verticalmente */
   min-height: 100vh;
@@ -59,31 +59,34 @@ body {
 
 .form-container {
   width: 45%; /* Ancho del formulario */
-  background-color: #ffffff;
+  background-color: #cfcfcfc4;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-right: 20px; /* Espacio entre form y listado */
+  margin-right: 50px; /* Espacio entre form y listado */
 }
 
 .listado-citas {
-margin-bottom: 20;
-  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 20px; /* Mueve el contenedor más hacia la izquierda */
+ 
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   /* Estilos para centrar el contenido */
   display: flex;
-  flex-direction: column; /* Alinear verticalmente los elementos */
-  justify-content: center; /* Centrar verticalmente los elementos */
+  flex-direction:column;
+  justify-content: center;
 }
-
 
 .cita {
-  margin: 0;
-  padding: 0;
-  ;/* Ejemplo de margen superior en píxeles */
+  margin: 15px; /* Añade espacio entre cada cita */
+  padding: 10px; /* Opcional: añade un poco de relleno alrededor de cada cita */
+  border: 1px solid #141414; /* Opcional: añade un borde alrededor de cada cita */
+  border-radius: 5px; /* Opcional: redondea los bordes de cada cita */
+  background-color: #cfcfcfc4;
 }
+
 
 .cita p {
   padding: 0.5rem; /* Ejemplo de padding en rem */
@@ -145,4 +148,5 @@ button:hover {
 .Listado {
   
   flex: 0 1 55%; 
+  margin-bottom: 20px;
 }
