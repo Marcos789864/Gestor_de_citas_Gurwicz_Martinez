@@ -37,7 +37,7 @@
   }
 }
 
-/* Estilos generales */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f0f0;
@@ -45,7 +45,7 @@ body {
   padding: 0;
   display:flex;
   justify-content: center;
-  align-items: flex-start; /* Alinear los elementos al inicio verticalmente */
+  align-items: flex-start; 
   min-height: 100vh;
 }
 
